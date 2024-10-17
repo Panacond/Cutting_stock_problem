@@ -1,4 +1,4 @@
-#Cutting stock problem
+# Cutting stock problem
 
 This is the code that solves the cutting problem.
 The solution is the simplest.
