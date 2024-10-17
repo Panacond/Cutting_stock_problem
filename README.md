@@ -8,3 +8,4 @@ And then they are laid out on the blanks.
 You can compare with the example on Wikipedia.
 I hope to write a solution that will work more optimally.
 Use it.
+[Cutting stock problem](https://panacond.github.io/Cutting_stock_problem/)
