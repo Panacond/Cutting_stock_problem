@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+input {
+  margin: 5px 0;
+  width: 2cm;
+}
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.cutting-visual {
+  margin-top: 20px;
+}
+.bar {
+  width: 16cm;
+  height: 2cm;
+  background-color: white;
+  /* background-color: #ccc; */
+  position: relative;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+.segment {
+  height: 50px;
+  position: absolute;
+  background-color: #6aaf44;
+  border: 1px solid #333;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.remainder {
+  position: absolute;
+  background-color: #d3d3d3;
+  height: 50px;
+  border: 1px solid #aaa;
+  text-align: center;
+  color: #333;
+  line-height: 50px;
+  font-weight: bold;
+}
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  float: right;
+  margin-top: 10px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.label-text {
+  float: right;
+  margin-right: 10px;
+  font-size: 1em;
+  line-height: 34px;
+}
